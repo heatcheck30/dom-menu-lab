@@ -1,10 +1,12 @@
+//So this HW is slighly outdated since they used var, but you shouldn't!! 
+
 // Menu data structure
 var menuLinks = [
-    {text: 'about', href: '/about'},
-    {text: 'catalog', href: '/catalog'},
-    {text: 'orders', href: '/orders'},
-    {text: 'account', href: '/account'},
-  ];
+  {text: 'about', href: '/about'},
+  {text: 'catalog', href: '/catalog'},
+  {text: 'orders', href: '/orders'},
+  {text: 'account', href: '/account'},
+];
 
 
 // Task 1.0
@@ -45,9 +47,9 @@ topMenuEl.classList.add('flex-around')
 
 
 // Task 3.1
-for(var i = 0; i < menuLinks.length; i++){
-    
-var element = document.createElement('a')
+for(let i = 0; i < menuLinks.length; i++){
+  
+const element = document.createElement('a')
 element.href = menuLinks[i]['href']
 element.text = menuLinks[i]['text']
 topMenuEl.appendChild(element)
